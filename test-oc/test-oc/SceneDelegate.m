@@ -39,6 +39,40 @@
     
     [self.window makeKeyAndVisible];
     NSLog(@"willConnectToSession  被调用");
+    
+    VCFirst *vf = [[VCFirst alloc] init];
+    VCSecond *vs = [[VCSecond alloc] init];
+    VCThird *vt = [[VCThird alloc] init];
+    
+    vf.title = @"首页";
+    vs.title = @"搜索";
+    vt.title = @"个人";
+    
+    vf.view.backgroundColor = [UIColor redColor];
+    vs.view.backgroundColor = [UIColor blueColor];
+    vt.view.backgroundColor = [UIColor yellowColor];
+    
+    // nav 包含viewController
+    UINavigationController *nav1 = [[UINavigationController alloc] initWithRootViewController:vf];
+    nav1.navigationBar.barTintColor = [UIColor whiteColor];
+    UINavigationController *nav2 = [[UINavigationController alloc] initWithRootViewController:vs];
+    nav2.navigationBar.barTintColor = [UIColor whiteColor];
+    UINavigationController *nav3 = [[UINavigationController alloc] initWithRootViewController:vt];
+    nav3.navigationBar.barTintColor = [UIColor whiteColor];
+    
+    
+    UITabBarController *ub = [[UITabBarController alloc] init];
+    ub.tabBar.tintColor = [UIColor colorWithRed:112.0/255.0 green:100.0/255.0 blue:255.0/255.0 alpha:1.0];
+    // 直接放 viewController
+   // NSArray *arr = [NSArray arrayWithObjects:vf, vs, vt, nil];
+    
+    // 直接放nav
+    NSArray *arr = [NSArray arrayWithObjects:nav1, nav2, nav3, nil];
+    
+    ub.viewControllers = arr;
+    self.window.rootViewController = ub;
+    
+    ub.tabBar.translucent = NO;
 }
 
 

@@ -16,6 +16,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    UITabBarItem *tbi = [[UITabBarItem alloc] initWithTitle:@"首页" image:nil tag:101];
+    tbi.image = [[UIImage imageNamed:@"3d_picture"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    tbi.selectedImage = [[UIImage imageNamed:@"3d_video"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    self.tabBarItem = tbi;
 }
 
 /*
