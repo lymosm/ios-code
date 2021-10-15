@@ -12,7 +12,7 @@ struct test_swiftApp: App {
     @Environment (\.scenePhase) private var scenePhase
     var body: some Scene {
         WindowGroup {
-            ContentView()
+           // ContentView()
             ContentView2()
         }.onChange(of: scenePhase){
             newScenePhase in switch newScenePhase{
