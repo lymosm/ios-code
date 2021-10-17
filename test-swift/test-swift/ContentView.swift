@@ -14,6 +14,35 @@ struct ContentView: View {
     }
 }
 
+struct ZStackViewTest: View{
+    var body: some View{
+        ZStack{
+            Color(red: 1, green: 0.8, blue: 0)
+                .edgesIgnoringSafeArea(.all) // 占满
+            Text("ZStack Test")
+              //  .background(Color.red)
+        }
+       // .background(Color.red)
+    }
+}
+
+struct stackTest: View{
+    var body: some View{
+        // 加参数 spacing: 20 间隔
+        VStack(alignment: .leading){
+            Text("qqq")
+            Text("3333")
+            Button(action: {
+                print("button was tapped")
+            }){
+                Image(systemName: "pencil")
+            }
+            Spacer() // 推到顶部
+        }
+        
+    }
+}
+
 struct ContentView2: View{
     @State private var selectdTab = 0
     @State private var showingAlert = false

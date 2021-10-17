@@ -13,7 +13,9 @@ struct test_swiftApp: App {
     var body: some Scene {
         WindowGroup {
            // ContentView()
-            ContentView2()
+          //  ContentView2()
+          //  ZStackViewTest()
+            stackTest()
         }.onChange(of: scenePhase){
             newScenePhase in switch newScenePhase{
             case .active:
