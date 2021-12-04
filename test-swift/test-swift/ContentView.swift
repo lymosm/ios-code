@@ -43,7 +43,7 @@ struct stackTest: View{
     }
 }
 
-struct ContentView2: View{
+struct ContentTabView: View{
     @State private var selectdTab = 0
     @State private var showingAlert = false
     var body: some View{
@@ -57,6 +57,7 @@ struct ContentView2: View{
                     message: Text("message"),
                     dismissButton: .default(Text("ok"))
                 )
+                
             }
                 .onTapGesture{
                     self.selectdTab = 1
@@ -67,8 +68,8 @@ struct ContentView2: View{
                 }
             Text("Tab 2")
                 .tabItem{
-                    Image(systemName: "person")
-                    Text("我的")
+                    Image(systemName: "sun.max")
+                    Text("发现")
                     
                 }
             Text("Tab 3")
@@ -76,10 +77,10 @@ struct ContentView2: View{
                     Image(systemName: "list.star")
                     Text("订单")
                 }
-            Text("Tab 4")
+            meView()
                 .tabItem{
-                    Image(systemName: "sun.max")
-                    Text("发现")
+                    Image(systemName: "person")
+                    Text("我的二维码")
                 }
         }
     }
@@ -91,9 +92,9 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-struct ContentView2_Previews: PreviewProvider{
+struct ContentTabView_Previews: PreviewProvider{
     static var previews: some View{
-        ContentView2()
+        ContentTabView()
     }
 }
 
