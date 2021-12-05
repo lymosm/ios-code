@@ -80,7 +80,7 @@ struct ContentTabView: View{
             meView()
                 .tabItem{
                     Image(systemName: "person")
-                    Text("我的二维码")
+                    Text("我的")
                 }
         }
     }
