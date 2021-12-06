@@ -47,7 +47,9 @@ struct ContentTabView: View{
     @State private var selectdTab = 0
     @State private var showingAlert = false
     var body: some View{
-     //   Text("This is my first app.").padding()
+        
+        // first tabview
+        /*
         TabView(selection: $selectdTab){
             Button("show alert"){
                 self.showingAlert = true
@@ -83,7 +85,28 @@ struct ContentTabView: View{
                     Text("我的")
                 }
         }
+ */
+        
+        // second tabview
+        TabView{
+            contactView(contact_type: .none)
+                .tabItem{
+                    Image(systemName: "person.fill")
+                    Text("All")
+                }
+            contactView(contact_type: .contacted)
+                .tabItem{
+                    Image(systemName: "person.fill.checkmark")
+                    Text("Contacted")
+                }
+            contactView(contact_type: .uncontacted)
+                .tabItem{
+                    Image(systemName: "person.fill.xmark")
+                    Text("Uncontacted")
+                }
+        }
     }
+   
 }
 
 struct ContentView_Previews: PreviewProvider {

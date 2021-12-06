@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E25FEB8275E4907003E2587 /* contactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E25FEB7275E4907003E2587 /* contactView.swift */; };
 		1EC3BF582718650C009B2512 /* test_swiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC3BF572718650C009B2512 /* test_swiftApp.swift */; };
 		1EC3BF5A2718650C009B2512 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC3BF592718650C009B2512 /* ContentView.swift */; };
 		1EC3BF5C2718650D009B2512 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EC3BF5B2718650D009B2512 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E25FEB7275E4907003E2587 /* contactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contactView.swift; sourceTree = "<group>"; };
 		1EC3BF542718650C009B2512 /* test-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "test-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EC3BF572718650C009B2512 /* test_swiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test_swiftApp.swift; sourceTree = "<group>"; };
 		1EC3BF592718650C009B2512 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				1EC3BF5D2718650D009B2512 /* Preview Content */,
 				1EEC806D275B919B00A7408B /* contactModel.swift */,
 				1EEC8070275B92AE00A7408B /* meView.swift */,
+				1E25FEB7275E4907003E2587 /* contactView.swift */,
 			);
 			path = "test-swift";
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 				1EEC8071275B92AE00A7408B /* meView.swift in Sources */,
 				1EC3BF5A2718650C009B2512 /* ContentView.swift in Sources */,
 				1EC3BF582718650C009B2512 /* test_swiftApp.swift in Sources */,
+				1E25FEB8275E4907003E2587 /* contactView.swift in Sources */,
 				1EEC806E275B919B00A7408B /* contactModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
