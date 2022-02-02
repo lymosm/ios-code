@@ -46,6 +46,7 @@ struct stackTest: View{
 struct ContentTabView: View{
     @State private var selectdTab = 0
     @State private var showingAlert = false
+    let contactArr = contactModel()
     var body: some View{
         
         // first tabview
@@ -89,22 +90,23 @@ struct ContentTabView: View{
         
         // second tabview
         TabView{
-            contactView(contact_type: .none)
+            contactView(contact_type: .none, filter: .none)
                 .tabItem{
                     Image(systemName: "person.fill")
                     Text("All")
                 }
-            contactView(contact_type: .contacted)
+            contactView(contact_type: .contacted, filter: .contacted)
                 .tabItem{
                     Image(systemName: "person.fill.checkmark")
                     Text("Contacted")
                 }
-            contactView(contact_type: .uncontacted)
+            contactView(contact_type: .uncontacted, filter: .uncontacted)
                 .tabItem{
                     Image(systemName: "person.fill.xmark")
                     Text("Uncontacted")
                 }
         }
+        .environmentObject(contactArr)
     }
    
 }
