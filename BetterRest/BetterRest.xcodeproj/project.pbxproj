@@ -14,6 +14,7 @@
 		1EAA4B8F284BA8D800D70227 /* BetterRestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAA4B8E284BA8D800D70227 /* BetterRestTests.swift */; };
 		1EAA4B99284BA8D800D70227 /* BetterRestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAA4B98284BA8D800D70227 /* BetterRestUITests.swift */; };
 		1EAA4B9B284BA8D800D70227 /* BetterRestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAA4B9A284BA8D800D70227 /* BetterRestUITestsLaunchTests.swift */; };
+		1EC53610284CDCF000AC14A6 /* BetterRestMl.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 1EC5360F284CDCF000AC14A6 /* BetterRestMl.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		1EAA4B94284BA8D800D70227 /* BetterRestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BetterRestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EAA4B98284BA8D800D70227 /* BetterRestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterRestUITests.swift; sourceTree = "<group>"; };
 		1EAA4B9A284BA8D800D70227 /* BetterRestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterRestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1EC5360F284CDCF000AC14A6 /* BetterRestMl.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = BetterRestMl.mlmodel; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				1EAA4B7D284BA8D000D70227 /* BetterRestApp.swift */,
+				1EC5360F284CDCF000AC14A6 /* BetterRestMl.mlmodel */,
 				1EAA4B7F284BA8D000D70227 /* ContentView.swift */,
 				1EAA4B81284BA8D700D70227 /* Assets.xcassets */,
 				1EAA4B83284BA8D700D70227 /* Preview Content */,
@@ -259,6 +262,7 @@
 			files = (
 				1EAA4B80284BA8D000D70227 /* ContentView.swift in Sources */,
 				1EAA4B7E284BA8D000D70227 /* BetterRestApp.swift in Sources */,
+				1EC53610284CDCF000AC14A6 /* BetterRestMl.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
