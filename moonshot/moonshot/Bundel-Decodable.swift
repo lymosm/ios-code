@@ -19,9 +19,20 @@ extension Bundle{
         let formatter = DateFormatter()
         formatter.dateFormat = "y-MM-dd"
         decoder.dateDecodingStrategy = .formatted(formatter)
+        /*
         guard let loaded = try? decoder.decode(T.self, from: data) else{
+           fatalError("failed to decode file: \(file) from bundle.")
+            // return T
+        }
+         
+        
+        return loaded
+         */
+        do{
+            return try decoder.decode(T.self, from: data)
+        }catch{
+            print(error)
             fatalError("failed to decode file: \(file) from bundle.")
         }
-        return loaded
     }
 }
