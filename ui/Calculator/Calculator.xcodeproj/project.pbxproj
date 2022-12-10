@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1ECC5BC0294421FA0005D5B0 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ECC5BBF294421FA0005D5B0 /* Storyboard.storyboard */; };
 		1EF93B872940EF4F001757C1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF93B862940EF4F001757C1 /* AppDelegate.m */; };
 		1EF93B8A2940EF4F001757C1 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF93B892940EF4F001757C1 /* SceneDelegate.m */; };
 		1EF93B8D2940EF4F001757C1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF93B8C2940EF4F001757C1 /* ViewController.m */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1ECC5BBF294421FA0005D5B0 /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		1EF93B822940EF4F001757C1 /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EF93B852940EF4F001757C1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1EF93B862940EF4F001757C1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				1EF93B8B2940EF4F001757C1 /* ViewController.h */,
 				1EF93B8C2940EF4F001757C1 /* ViewController.m */,
 				1EF93B8E2940EF4F001757C1 /* Main.storyboard */,
+				1ECC5BBF294421FA0005D5B0 /* Storyboard.storyboard */,
 				1EF93B912940EF51001757C1 /* Assets.xcassets */,
 				1EF93B932940EF51001757C1 /* LaunchScreen.storyboard */,
 				1EF93B962940EF51001757C1 /* Info.plist */,
@@ -240,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1EF93B952940EF51001757C1 /* LaunchScreen.storyboard in Resources */,
+				1ECC5BC0294421FA0005D5B0 /* Storyboard.storyboard in Resources */,
 				1EF93B922940EF51001757C1 /* Assets.xcassets in Resources */,
 				1EF93B902940EF4F001757C1 /* Main.storyboard in Resources */,
 			);
