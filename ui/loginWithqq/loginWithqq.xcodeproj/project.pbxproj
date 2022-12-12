@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E2F13F42945E60B004F5C31 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E2F13F32945E60B004F5C31 /* AppDelegate.m */; };
+		1E2F13F72945E60B004F5C31 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E2F13F62945E60B004F5C31 /* SceneDelegate.m */; };
+		1E2F13FA2945E60B004F5C31 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E2F13F92945E60B004F5C31 /* ViewController.m */; };
+		1E2F13FD2945E60B004F5C31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E2F13FB2945E60B004F5C31 /* Main.storyboard */; };
+		1E2F13FF2945E60F004F5C31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E2F13FE2945E60F004F5C31 /* Assets.xcassets */; };
+		1E2F14022945E60F004F5C31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E2F14002945E60F004F5C31 /* LaunchScreen.storyboard */; };
+		1E2F14052945E60F004F5C31 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E2F14042945E60F004F5C31 /* main.m */; };
+		1E2F140F2945E60F004F5C31 /* loginWithqqTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E2F140E2945E60F004F5C31 /* loginWithqqTests.m */; };
+		1E2F141A2945E60F004F5C31 /* loginWithqqUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E2F14192945E60F004F5C31 /* loginWithqqUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1E2F140B2945E60F004F5C31 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E2F13E72945E60B004F5C31 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E2F13EE2945E60B004F5C31;
+			remoteInfo = loginWithqq;
+		};
+		1E2F14162945E60F004F5C31 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E2F13E72945E60B004F5C31 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E2F13EE2945E60B004F5C31;
+			remoteInfo = loginWithqq;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1E2F13EF2945E60B004F5C31 /* loginWithqq.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = loginWithqq.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E2F13F22945E60B004F5C31 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1E2F13F32945E60B004F5C31 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1E2F13F52945E60B004F5C31 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		1E2F13F62945E60B004F5C31 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		1E2F13F82945E60B004F5C31 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1E2F13F92945E60B004F5C31 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1E2F13FC2945E60B004F5C31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1E2F13FE2945E60F004F5C31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1E2F14012945E60F004F5C31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1E2F14032945E60F004F5C31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E2F14042945E60F004F5C31 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1E2F140A2945E60F004F5C31 /* loginWithqqTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = loginWithqqTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E2F140E2945E60F004F5C31 /* loginWithqqTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = loginWithqqTests.m; sourceTree = "<group>"; };
+		1E2F14102945E60F004F5C31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E2F14152945E60F004F5C31 /* loginWithqqUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = loginWithqqUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E2F14192945E60F004F5C31 /* loginWithqqUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = loginWithqqUITests.m; sourceTree = "<group>"; };
+		1E2F141B2945E60F004F5C31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1E2F13EC2945E60B004F5C31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E2F14072945E60F004F5C31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E2F14122945E60F004F5C31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1E2F13E62945E60B004F5C31 = {
+			isa = PBXGroup;
+			children = (
+				1E2F13F12945E60B004F5C31 /* loginWithqq */,
+				1E2F140D2945E60F004F5C31 /* loginWithqqTests */,
+				1E2F14182945E60F004F5C31 /* loginWithqqUITests */,
+				1E2F13F02945E60B004F5C31 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1E2F13F02945E60B004F5C31 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1E2F13EF2945E60B004F5C31 /* loginWithqq.app */,
+				1E2F140A2945E60F004F5C31 /* loginWithqqTests.xctest */,
+				1E2F14152945E60F004F5C31 /* loginWithqqUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1E2F13F12945E60B004F5C31 /* loginWithqq */ = {
+			isa = PBXGroup;
+			children = (
+				1E2F13F22945E60B004F5C31 /* AppDelegate.h */,
+				1E2F13F32945E60B004F5C31 /* AppDelegate.m */,
+				1E2F13F52945E60B004F5C31 /* SceneDelegate.h */,
+				1E2F13F62945E60B004F5C31 /* SceneDelegate.m */,
+				1E2F13F82945E60B004F5C31 /* ViewController.h */,
+				1E2F13F92945E60B004F5C31 /* ViewController.m */,
+				1E2F13FB2945E60B004F5C31 /* Main.storyboard */,
+				1E2F13FE2945E60F004F5C31 /* Assets.xcassets */,
+				1E2F14002945E60F004F5C31 /* LaunchScreen.storyboard */,
+				1E2F14032945E60F004F5C31 /* Info.plist */,
+				1E2F14042945E60F004F5C31 /* main.m */,
+			);
+			path = loginWithqq;
+			sourceTree = "<group>";
+		};
+		1E2F140D2945E60F004F5C31 /* loginWithqqTests */ = {
+			isa = PBXGroup;
+			children = (
+				1E2F140E2945E60F004F5C31 /* loginWithqqTests.m */,
+				1E2F14102945E60F004F5C31 /* Info.plist */,
+			);
+			path = loginWithqqTests;
+			sourceTree = "<group>";
+		};
+		1E2F14182945E60F004F5C31 /* loginWithqqUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1E2F14192945E60F004F5C31 /* loginWithqqUITests.m */,
+				1E2F141B2945E60F004F5C31 /* Info.plist */,
+			);
+			path = loginWithqqUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1E2F13EE2945E60B004F5C31 /* loginWithqq */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E2F141E2945E60F004F5C31 /* Build configuration list for PBXNativeTarget "loginWithqq" */;
+			buildPhases = (
+				1E2F13EB2945E60B004F5C31 /* Sources */,
+				1E2F13EC2945E60B004F5C31 /* Frameworks */,
+				1E2F13ED2945E60B004F5C31 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = loginWithqq;
+			productName = loginWithqq;
+			productReference = 1E2F13EF2945E60B004F5C31 /* loginWithqq.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1E2F14092945E60F004F5C31 /* loginWithqqTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E2F14212945E60F004F5C31 /* Build configuration list for PBXNativeTarget "loginWithqqTests" */;
+			buildPhases = (
+				1E2F14062945E60F004F5C31 /* Sources */,
+				1E2F14072945E60F004F5C31 /* Frameworks */,
+				1E2F14082945E60F004F5C31 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1E2F140C2945E60F004F5C31 /* PBXTargetDependency */,
+			);
+			name = loginWithqqTests;
+			productName = loginWithqqTests;
+			productReference = 1E2F140A2945E60F004F5C31 /* loginWithqqTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1E2F14142945E60F004F5C31 /* loginWithqqUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E2F14242945E60F004F5C31 /* Build configuration list for PBXNativeTarget "loginWithqqUITests" */;
+			buildPhases = (
+				1E2F14112945E60F004F5C31 /* Sources */,
+				1E2F14122945E60F004F5C31 /* Frameworks */,
+				1E2F14132945E60F004F5C31 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1E2F14172945E60F004F5C31 /* PBXTargetDependency */,
+			);
+			name = loginWithqqUITests;
+			productName = loginWithqqUITests;
+			productReference = 1E2F14152945E60F004F5C31 /* loginWithqqUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1E2F13E72945E60B004F5C31 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					1E2F13EE2945E60B004F5C31 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					1E2F14092945E60F004F5C31 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 1E2F13EE2945E60B004F5C31;
+					};
+					1E2F14142945E60F004F5C31 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 1E2F13EE2945E60B004F5C31;
+					};
+				};
+			};
+			buildConfigurationList = 1E2F13EA2945E60B004F5C31 /* Build configuration list for PBXProject "loginWithqq" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1E2F13E62945E60B004F5C31;
+			productRefGroup = 1E2F13F02945E60B004F5C31 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1E2F13EE2945E60B004F5C31 /* loginWithqq */,
+				1E2F14092945E60F004F5C31 /* loginWithqqTests */,
+				1E2F14142945E60F004F5C31 /* loginWithqqUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1E2F13ED2945E60B004F5C31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E2F14022945E60F004F5C31 /* LaunchScreen.storyboard in Resources */,
+				1E2F13FF2945E60F004F5C31 /* Assets.xcassets in Resources */,
+				1E2F13FD2945E60B004F5C31 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E2F14082945E60F004F5C31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E2F14132945E60F004F5C31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1E2F13EB2945E60B004F5C31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E2F13FA2945E60B004F5C31 /* ViewController.m in Sources */,
+				1E2F13F42945E60B004F5C31 /* AppDelegate.m in Sources */,
+				1E2F14052945E60F004F5C31 /* main.m in Sources */,
+				1E2F13F72945E60B004F5C31 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E2F14062945E60F004F5C31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E2F140F2945E60F004F5C31 /* loginWithqqTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E2F14112945E60F004F5C31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E2F141A2945E60F004F5C31 /* loginWithqqUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1E2F140C2945E60F004F5C31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1E2F13EE2945E60B004F5C31 /* loginWithqq */;
+			targetProxy = 1E2F140B2945E60F004F5C31 /* PBXContainerItemProxy */;
+		};
+		1E2F14172945E60F004F5C31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1E2F13EE2945E60B004F5C31 /* loginWithqq */;
+			targetProxy = 1E2F14162945E60F004F5C31 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1E2F13FB2945E60B004F5C31 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1E2F13FC2945E60B004F5C31 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1E2F14002945E60F004F5C31 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1E2F14012945E60F004F5C31 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1E2F141C2945E60F004F5C31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1E2F141D2945E60F004F5C31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1E2F141F2945E60F004F5C31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2MU5Q3N3P9;
+				INFOPLIST_FILE = loginWithqq/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lymos.ui.loginWithqq;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1E2F14202945E60F004F5C31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2MU5Q3N3P9;
+				INFOPLIST_FILE = loginWithqq/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lymos.ui.loginWithqq;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1E2F14222945E60F004F5C31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2MU5Q3N3P9;
+				INFOPLIST_FILE = loginWithqqTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lymos.ui.loginWithqqTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/loginWithqq.app/loginWithqq";
+			};
+			name = Debug;
+		};
+		1E2F14232945E60F004F5C31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2MU5Q3N3P9;
+				INFOPLIST_FILE = loginWithqqTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lymos.ui.loginWithqqTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/loginWithqq.app/loginWithqq";
+			};
+			name = Release;
+		};
+		1E2F14252945E60F004F5C31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2MU5Q3N3P9;
+				INFOPLIST_FILE = loginWithqqUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lymos.ui.loginWithqqUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = loginWithqq;
+			};
+			name = Debug;
+		};
+		1E2F14262945E60F004F5C31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2MU5Q3N3P9;
+				INFOPLIST_FILE = loginWithqqUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lymos.ui.loginWithqqUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = loginWithqq;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1E2F13EA2945E60B004F5C31 /* Build configuration list for PBXProject "loginWithqq" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E2F141C2945E60F004F5C31 /* Debug */,
+				1E2F141D2945E60F004F5C31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E2F141E2945E60F004F5C31 /* Build configuration list for PBXNativeTarget "loginWithqq" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E2F141F2945E60F004F5C31 /* Debug */,
+				1E2F14202945E60F004F5C31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E2F14212945E60F004F5C31 /* Build configuration list for PBXNativeTarget "loginWithqqTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E2F14222945E60F004F5C31 /* Debug */,
+				1E2F14232945E60F004F5C31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E2F14242945E60F004F5C31 /* Build configuration list for PBXNativeTarget "loginWithqqUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E2F14252945E60F004F5C31 /* Debug */,
+				1E2F14262945E60F004F5C31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1E2F13E72945E60B004F5C31 /* Project object */;
+}
