@@ -16,7 +16,7 @@ struct AddBookView: View {
     @State private var rating = 3
     @State private var review = ""
     
-    let genres = ["a", "b", "c", "d"]
+    let genres = ["Fantasy", "Horror", "Kids", "Mystery", "Poetry", "Romance", "Thriller"]
     
     @Environment(\.presentationMode) var presentationMode
     
@@ -35,11 +35,12 @@ struct AddBookView: View {
                 }
                 
                 Section{
-                    Picker("Rating", selection: $rating){
-                        ForEach(0..<6){
-                            Text("\($0)")
-                        }
-                    }
+//                    Picker("Rating", selection: $rating){
+//                        ForEach(0..<6){
+//                            Text("\($0)")
+//                        }
+//                    }
+                    RatingView(rating: $rating)
                     TextField("Review", text: $review)
                 }
                 
@@ -47,6 +48,10 @@ struct AddBookView: View {
                     Button("Save"){
                         let newBook = Book(context: self.moc)
                         newBook.title = self.title
+                        newBook.author = self.author
+                        newBook.genre = self.genre
+                        newBook.rating = Int16(self.rating)
+                        newBook.review = self.review
                         try? moc.save()
                         self.presentationMode.wrappedValue.dismiss()
                     }

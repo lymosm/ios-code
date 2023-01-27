@@ -12,7 +12,10 @@ struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
     
     @Environment(\.managedObjectContext) var moc
-    @FetchRequest(sortDescriptors: []) var books: FetchedResults<Book>
+    @FetchRequest(sortDescriptors: [
+        NSSortDescriptor(keyPath: \Book.title, ascending: true),
+        NSSortDescriptor(keyPath: \Book.author, ascending: true)
+    ]) var books: FetchedResults<Book>
     
     @State private var showingAddScreen = false
 
@@ -22,17 +25,39 @@ struct ContentView: View {
     private var items: FetchedResults<Item>
 
     var body: some View {
+        
         NavigationView{
-            Text("Count: \(books.count)")
-                .navigationBarTitle("Bookworm")
-                .navigationBarItems(trailing: Button(action: {
-                        self.showingAddScreen.toggle()
-                    }){
-                    Image(systemName: "plus")
-                })
-                .sheet(isPresented: $showingAddScreen){
-                    AddBookView().environment(\.managedObjectContext, self.moc)
+            VStack{
+                Text("Count: \(books.count)")
+                    .navigationBarTitle("Bookworm")
+                    .navigationBarItems(trailing: Button(action: {
+                            self.showingAddScreen.toggle()
+                        }){
+                        Image(systemName: "plus")
+                    })
+                    .sheet(isPresented: $showingAddScreen){
+                        AddBookView().environment(\.managedObjectContext, self.moc)
+                    }
+                
+                List {
+                    ForEach(books, id: \.self) { book in
+                        // NavigationLink(destination: Text(book.title ?? "Unknown Title"))
+                        NavigationLink(destination: DetailView(book: book)){
+                            EmojiRatingView(rating: book.rating)
+                                .font(.largeTitle)
+
+                            VStack(alignment: .leading) {
+                                Text(book.title ?? "Unknown Title")
+                                    .font(.headline)
+                                Text(book.author ?? "Unknown Author")
+                                    .foregroundColor(.secondary)
+                            }
+                        }
+                    }
+                    .onDelete(perform: deleteBooks)
                 }
+            }
+            
         }
         
         
@@ -63,6 +88,14 @@ struct ContentView: View {
             }
         }
         
+    }
+    
+    func deleteBooks(at offsets: IndexSet){
+        for offset in offsets{
+            let book = books[offset]
+            moc.delete(book)
+        }
+        try? moc.save()
     }
 
     private func addItem() {
