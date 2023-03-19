@@ -12,6 +12,8 @@
 		1E00545129B397BE000D6B10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E00545029B397BE000D6B10 /* Assets.xcassets */; };
 		1E00545429B397BE000D6B10 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E00545329B397BE000D6B10 /* Preview Assets.xcassets */; };
 		1E00545D29B39801000D6B10 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E00545C29B39801000D6B10 /* ImagePicker.swift */; };
+		1E0DD99429C5540300863E5E /* ImagePicker2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0DD99329C5540300863E5E /* ImagePicker2.swift */; };
+		1ECC2A1929C733C9000DFFD4 /* ImageSaver2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECC2A1829C733C9000DFFD4 /* ImageSaver2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		1E00545329B397BE000D6B10 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1E00545529B397BE000D6B10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E00545C29B39801000D6B10 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		1E0DD99329C5540300863E5E /* ImagePicker2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker2.swift; sourceTree = "<group>"; };
+		1ECC2A1829C733C9000DFFD4 /* ImageSaver2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSaver2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				1E00545529B397BE000D6B10 /* Info.plist */,
 				1E00545229B397BE000D6B10 /* Preview Content */,
 				1E00545C29B39801000D6B10 /* ImagePicker.swift */,
+				1E0DD99329C5540300863E5E /* ImagePicker2.swift */,
+				1ECC2A1829C733C9000DFFD4 /* ImageSaver2.swift */,
 			);
 			path = Instafilter;
 			sourceTree = "<group>";
@@ -141,7 +147,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E0DD99429C5540300863E5E /* ImagePicker2.swift in Sources */,
 				1E00545D29B39801000D6B10 /* ImagePicker.swift in Sources */,
+				1ECC2A1929C733C9000DFFD4 /* ImageSaver2.swift in Sources */,
 				1E00544F29B397B7000D6B10 /* ContentView.swift in Sources */,
 				1E00544D29B397B7000D6B10 /* InstafilterApp.swift in Sources */,
 			);
