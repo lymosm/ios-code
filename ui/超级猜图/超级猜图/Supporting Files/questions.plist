@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>answer</key>
+		<string>林俊杰</string>
+		<key>icon</key>
+		<string>people_linjunjie</string>
+		<key>title</key>
+		<string>歌手</string>
+		<key>quesions</key>
+		<array>
+			<string>中</string>
+			<string>过</string>
+			<string>林</string>
+			<string>哈</string>
+			<string>均</string>
+			<string>俊</string>
+			<string>届</string>
+			<string>杰</string>
+		</array>
+	</dict>
+	<dict>
+		<key>answer</key>
+		<string>王心凌</string>
+		<key>icon</key>
+		<string>people_wangxinling</string>
+		<key>title</key>
+		<string>歌手</string>
+		<key>questions</key>
+		<array>
+			<string>湖</string>
+			<string>莎</string>
+			<string>卡</string>
+			<string>哭</string>
+			<string>金</string>
+			<string>开</string>
+			<string>六</string>
+		</array>
+	</dict>
+	<dict>
+		<key>answer</key>
+		<string>曹颖</string>
+		<key>icon</key>
+		<string>people_caoying</string>
+		<key>title</key>
+		<string> 演员</string>
+		<key>questions</key>
+		<array>
+			<string>去</string>
+			<string>区</string>
+			<string>就</string>
+			<string>瞿</string>
+			<string>颖</string>
+			<string>啦</string>
+		</array>
+	</dict>
+</array>
+</plist>

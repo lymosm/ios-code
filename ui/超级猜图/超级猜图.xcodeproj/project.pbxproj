@@ -14,6 +14,8 @@
 		1E6C00B42A88FCE900C4A8EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E6C00B32A88FCE900C4A8EF /* Assets.xcassets */; };
 		1E6C00B72A88FCE900C4A8EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E6C00B52A88FCE900C4A8EF /* LaunchScreen.storyboard */; };
 		1E6C00BA2A88FCE900C4A8EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6C00B92A88FCE900C4A8EF /* main.m */; };
+		1E6D78FC2A9B955C004362D9 /* CZQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6D78FB2A9B955C004362D9 /* CZQuestion.m */; };
+		1EED2CD52A94EF3D008F913D /* questions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1EED2CD42A94EF3D008F913D /* questions.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,9 @@
 		1E6C00B62A88FCE900C4A8EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E6C00B82A88FCE900C4A8EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E6C00B92A88FCE900C4A8EF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1E6D78FA2A9B955C004362D9 /* CZQuestion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CZQuestion.h; sourceTree = "<group>"; };
+		1E6D78FB2A9B955C004362D9 /* CZQuestion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CZQuestion.m; sourceTree = "<group>"; };
+		1EED2CD42A94EF3D008F913D /* questions.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = questions.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +66,7 @@
 		1E6C00A62A88FCE800C4A8EF /* 超级猜图 */ = {
 			isa = PBXGroup;
 			children = (
+				1EED2CD32A94EED2008F913D /* Supporting Files */,
 				1E6C00C42A88FD7F00C4A8EF /* Others */,
 				1E6C00C32A88FD3200C4A8EF /* Controllers */,
 				1E6C00C22A88FD2800C4A8EF /* Models */,
@@ -84,6 +90,8 @@
 		1E6C00C22A88FD2800C4A8EF /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				1E6D78FA2A9B955C004362D9 /* CZQuestion.h */,
+				1E6D78FB2A9B955C004362D9 /* CZQuestion.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -106,6 +114,14 @@
 				1E6C00AB2A88FCE800C4A8EF /* SceneDelegate.m */,
 			);
 			path = Others;
+			sourceTree = "<group>";
+		};
+		1EED2CD32A94EED2008F913D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1EED2CD42A94EF3D008F913D /* questions.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,6 +150,7 @@
 		1E6C009C2A88FCE800C4A8EF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = CZ;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
 					1E6C00A32A88FCE800C4A8EF = {
@@ -164,6 +181,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EED2CD52A94EF3D008F913D /* questions.plist in Resources */,
 				1E6C00B72A88FCE900C4A8EF /* LaunchScreen.storyboard in Resources */,
 				1E6C00B42A88FCE900C4A8EF /* Assets.xcassets in Resources */,
 				1E6C00B22A88FCE800C4A8EF /* Main.storyboard in Resources */,
@@ -177,6 +195,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E6D78FC2A9B955C004362D9 /* CZQuestion.m in Sources */,
 				1E6C00AF2A88FCE800C4A8EF /* ViewController.m in Sources */,
 				1E6C00A92A88FCE800C4A8EF /* AppDelegate.m in Sources */,
 				1E6C00BA2A88FCE900C4A8EF /* main.m in Sources */,
@@ -330,7 +349,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.lymos.----";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lymos.guessimage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -348,7 +367,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.lymos.----";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lymos.guessimage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
