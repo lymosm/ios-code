@@ -9,7 +9,7 @@
 		<string>people_linjunjie</string>
 		<key>title</key>
 		<string>歌手</string>
-		<key>quesions</key>
+		<key>questions</key>
 		<array>
 			<string>中</string>
 			<string>过</string>
@@ -31,11 +31,11 @@
 		<key>questions</key>
 		<array>
 			<string>湖</string>
-			<string>莎</string>
-			<string>卡</string>
+			<string>凌</string>
+			<string>王</string>
 			<string>哭</string>
 			<string>金</string>
-			<string>开</string>
+			<string>心</string>
 			<string>六</string>
 		</array>
 	</dict>
@@ -50,7 +50,7 @@
 		<array>
 			<string>去</string>
 			<string>区</string>
-			<string>就</string>
+			<string>曹</string>
 			<string>瞿</string>
 			<string>颖</string>
 			<string>啦</string>

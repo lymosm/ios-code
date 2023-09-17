@@ -16,6 +16,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *lbl_title;
 @property (weak, nonatomic) IBOutlet UIButton *btn_next;
 @property (weak, nonatomic) IBOutlet UIButton *bg;
+@property (weak, nonatomic) IBOutlet UIView *answer_view;
+@property (weak, nonatomic) IBOutlet UIView *options_view;
+- (IBAction)btnTipClick:(id)sender;
 
 @property (weak, nonatomic) IBOutlet UIButton *cover;
 
@@ -77,6 +80,23 @@
 - (void) nextQuestion{
     NSLog(@"click next");
     self.index++;
+    
+    if(self.index >= self.questions.count){
+        NSLog(@"%s", "finish");
+        
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle: @"Action Tip" message: @"success" preferredStyle: UIAlertControllerStyleAlert];
+        
+        [alert addAction: [UIAlertAction actionWithTitle: @"ok" style: UIAlertActionStyleDefault handler: ^(UIAlertAction * _Nonnull action){
+            NSLog(@"click alert ok");
+            self.index = -1;
+            [self nextQuestion];
+        }]];
+        
+        [self presentViewController: alert animated: YES completion: nil];
+        
+        return ;
+    }
+    
     NSLog(@"%d", self.index);
     CZQuestion *model = self.questions[self.index];
     
@@ -85,7 +105,154 @@
     [self.bg setImage: [UIImage imageNamed: model.icon ] forState: UIControlStateNormal];
     
     self.btn_next.enabled = self.index != self.questions.count - 1;
+    
+    // 删除之前的
+    // while(self.answer_view.subviews.firstObject){
+    //    [self.answer_view.subviews.firstObject removeFromSuperview];
+    // }
+    // 或使用以下方式 不用自己写循环
+    [self.answer_view.subviews makeObjectsPerformSelector: @selector(removeFromSuperview)];
+    
+    
+    // 创建答案
+    NSInteger len = model.answer.length;
+    CGFloat margin = 10;
+    CGFloat w = 35;
+    CGFloat h = 35;
+    CGFloat x = 0;
+    CGFloat y = 0;
+    
+    CGFloat left = (self.answer_view.frame.size.width - (len * w + (len - 1) * margin)) / 2;
+    
+    for(int i = 0; i < len; i++){
+        UIButton *btn = [[UIButton alloc] init];
+        
+        [btn setBackgroundImage: [UIImage imageNamed: @"btn_answer"] forState: UIControlStateNormal];
+        [btn setBackgroundImage: [UIImage imageNamed: @"btn_answer_highlighted"] forState: UIControlStateHighlighted];
+        x = left + i * (w + margin);
+        
+        [btn setTitleColor: [UIColor blackColor] forState: UIControlStateNormal];
+        btn.frame = CGRectMake(x,y, w, h);
+        
+        [self.answer_view addSubview: btn];
+        
+        [btn addTarget: self action:@selector(answerClick:) forControlEvents: UIControlEventTouchUpInside];
+    }
+    
+    
+    [self createOptions: model];
+    
 }
+
+- (void) createOptions: (CZQuestion *) model{
+    [self.options_view.subviews makeObjectsPerformSelector: @selector(removeFromSuperview)];
+    
+    NSInteger len = model.options.count;
+    NSLog(@"count: %ld", len);
+    CGFloat w = 35;
+    CGFloat h = 35;
+    CGFloat x = 0;
+    CGFloat y = 0;
+    
+    int col = 5;
+    CGFloat margin = 10;
+    CGFloat margin_left = (self.options_view.frame.size.width - (w * col + (col - 1) * margin)) / 2;
+    
+    
+    for( int i = 0; i < len; i++ ){
+        UIButton *btn = [[UIButton alloc] init];
+        NSLog(@"%d", i);
+        [btn setBackgroundImage: [UIImage imageNamed: @"btn_answer"] forState: UIControlStateNormal];
+        [btn setBackgroundImage: [UIImage imageNamed: @"btn_answer_highlighted"] forState: UIControlStateHighlighted];
+        
+        [btn setTitle: model.options[i] forState: UIControlStateNormal];
+        [btn setTitleColor: [UIColor blackColor] forState: UIControlStateNormal];
+        [btn setTag: i];
+        
+        int col_index = i % col;
+        int row_index = i / col;
+        
+        x = margin_left + col_index * (w + margin);
+        y = 0 + row_index * (h + margin);
+        
+        btn.frame = CGRectMake(x, y, w, h);
+        
+        [self.options_view addSubview: btn];
+        [btn addTarget: self action: @selector(optionClick:) forControlEvents: UIControlEventTouchUpInside];
+    }
+    
+    self.options_view.userInteractionEnabled = YES;
+    
+}
+
+- (void) answerClick: (UIButton *) sender {
+    [sender setTitle: nil forState: UIControlStateNormal];
+    
+    for(UIButton *btn in self.options_view.subviews){
+        if(btn.tag == sender.tag){
+            btn.hidden = NO;
+            self.options_view.userInteractionEnabled = YES;
+            break;
+        }
+    }
+    [self setAnswerColor: [UIColor blackColor]];
+}
+
+- (void) optionClick: (UIButton *) sender {
+    
+    
+    sender.hidden = YES;
+    
+    for(UIButton *btn in self.answer_view.subviews){
+        if(btn.currentTitle == nil){
+            [btn setTitle: sender.currentTitle forState: UIControlStateNormal];
+            btn.tag = sender.tag;
+            break;
+        }
+    }
+    
+    BOOL is_full = YES;
+    
+    NSMutableString *str_user = [NSMutableString string];
+    
+    for(UIButton *btn2 in self.answer_view.subviews){
+        if(btn2.currentTitle == nil){
+            is_full = NO;
+            break;
+        }else{
+            [str_user appendString: btn2.currentTitle];
+        }
+    }
+    NSLog(@"current user answer: %@", str_user);
+    
+    if(is_full == YES){
+        self.options_view.userInteractionEnabled = NO;
+        
+        CZQuestion *model = self.questions[self.index];
+        
+        if([model.answer isEqualToString: str_user]){
+            [self addScore: 100];
+            [self setAnswerColor: [UIColor blueColor]];
+            [self performSelector: @selector(nextQuestion) withObject: nil afterDelay: 0.5];
+        }else{
+            [self setAnswerColor: [UIColor redColor]];
+        }
+    }
+}
+
+- (void) addScore: (int) score{
+    NSString *str = self.btn_score.currentTitle;
+    int current_score = str.intValue;
+    current_score = current_score + score;
+    [self.btn_score setTitle: [NSString stringWithFormat: @"%d", current_score] forState: UIControlStateNormal];
+}
+
+- (void) setAnswerColor: (UIColor *) color{
+    for(UIButton *btn in self.answer_view.subviews){
+        [btn setTitleColor: color forState: UIControlStateNormal];
+    }
+}
+
 - (IBAction)clickShowBig:(id)sender {
     [self showBigImage];
 }
@@ -136,6 +303,25 @@
             self.cover = nil;
         }
     }];
+}
+
+- (IBAction)btnTipClick:(id)sender {
+    [self addScore: -100];
+    
+    for(UIButton *btn in self.answer_view.subviews){
+        [self answerClick: btn];
+    }
+    
+    CZQuestion *model = self.questions[self.index];
+    
+    NSString *first = [model.answer substringToIndex: 1];
+    
+    for(UIButton *btn2 in self.options_view.subviews){
+        if([btn2.currentTitle isEqualToString: first]){
+            [self optionClick: btn2];
+            break;
+        }
+    }
 }
 
 @end

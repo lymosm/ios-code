@@ -35,6 +35,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <state key="highlighted" backgroundImage="btn_left_highlighted"/>
+                                <connections>
+                                    <action selector="btnTipClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cig-sM-cdo"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="53m-7B-7uc">
                                 <rect key="frame" x="9" y="302" width="70" height="36"/>
@@ -89,16 +92,27 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lFL-fv-fsw" userLabel="answer view">
+                                <rect key="frame" x="0.0" y="457" width="414" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LwS-UM-Lqa" userLabel="options view">
+                                <rect key="frame" x="0.0" y="535" width="414" height="213"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="answer_view" destination="lFL-fv-fsw" id="53l-bd-5WI"/>
                         <outlet property="bg" destination="Onm-BX-PA0" id="xLW-l6-mUH"/>
                         <outlet property="btn_next" destination="58V-Eh-Nuo" id="FBA-Z6-c0Y"/>
                         <outlet property="btn_score" destination="H28-Hl-SDL" id="ejJ-Ki-nVZ"/>
+                        <outlet property="cover" destination="Ag5-OZ-tnl" id="EBP-va-Ihl"/>
                         <outlet property="lbl_index" destination="pp3-To-2dd" id="qo9-yo-atX"/>
                         <outlet property="lbl_title" destination="WTF-CK-bKX" id="FcN-Sc-v9I"/>
+                        <outlet property="options_view" destination="LwS-UM-Lqa" id="led-ge-Hr1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

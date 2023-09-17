@@ -14,6 +14,7 @@
         self.answer = dict[@"answer"];
         self.title = dict[@"title"];
         self.icon = dict[@"icon"];
+        self.options = dict[@"questions"];
     }
     return self;
 }
